@@ -1,0 +1,115 @@
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;   /* ✅ pushes content below navbar */
+  display: flex;
+  align-items: center;
+}
+
+/* layout */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+/* LEFT SIDE */
+.hero-left h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-left span {
+  color: #38bdf8;
+}
+
+.hero-left h3 {
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+.hero-left p {
+  max-width: 520px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* buttons */
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #38bdf8;
+  color: black;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+/* socials */
+.socials {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  display: flex;
+  gap: 20px;
+  color: #38bdf8;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tech-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+.tech-card h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tech-list span {
+  background: #020617;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left p {
+    margin: auto;
+  }
+}

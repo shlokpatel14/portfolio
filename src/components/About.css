@@ -1,0 +1,11 @@
+#about {
+  text-align: center;
+}
+
+#about p {
+  /* max-width: 600px; */
+  display: content;
+  margin: auto;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
