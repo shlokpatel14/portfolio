@@ -1,8 +1,9 @@
 import "./Experience.css";
-
+import FadeIn from "./FadeIn";
 export default function Experience() {
   return (
     <section id="experience">
+      <FadeIn>
       <h2>Experience & Certifications</h2>
 
       <div className="experience-container">
@@ -35,25 +36,29 @@ export default function Experience() {
 
           <div className="certificate-grid">
 
-            <a href="./public/InternshipSTEMcertificate.pdf" target="_blank">
-              <div className="certificate-card">
-                <p>Rife Software Internship Certificate</p>
-              </div>
-            </a>
-            <a href="./public/InternshipSTEMcertificate.pdf" target="_blank">
-              <div className="certificate-card">
-                <p>STEM Valley Solutions Internship Certificate</p>
-              </div>
-            </a>
-            <a href="/certificates/internship.pdf" target="_blank">
-              <div className="certificate-card">
-                <p>Introductiion to cyber security -Cisco Academy Certificate</p>
-              </div>
-            </a>
-          </div>
+              <a href="/certificates/rife.pdf" target="_blank">
+                <div className="certificate-card">
+                  <p>Rife Software Internship Certificate</p>
+                </div>
+              </a>
+
+              <a href="/certificates/stem.pdf" target="_blank">
+                <div className="certificate-card">
+                  <p>STEM Valley Solutions Internship Certificate</p>
+                </div>
+              </a>
+
+              <a href="/certificates/cisco.pdf" target="_blank">
+                <div className="certificate-card">
+                  <p>Introduction to Cyber Security - Cisco Academy Certificate</p>
+                </div>
+              </a>
+
+            </div>
         </div>
 
       </div>
+      </FadeIn>
     </section>
   );
 }

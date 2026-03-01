@@ -1,10 +1,12 @@
 import "./Navbar.css";
-
+import FadeIn from "./FadeIn";
 export default function Navbar() {
   return (
+    
     <nav className="navbar">
-      <div className="logo">Patel Shlok</div>
-
+      <FadeIn>
+      <img src="/Logo.png" alt="Patel Shlok Logo" className="logo-img" />
+      </FadeIn>
       <ul className="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>

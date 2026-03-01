@@ -1,16 +1,22 @@
 import "./Hero.css";
 import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
-
+import { motion } from "framer-motion";
+import FadeIn from "./FadeIn";
 export default function Hero() {
   return (
-    <section className="hero">
+    <motion.section
+      className="hero"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
 
       <div className="hero-container">
 
         {/* LEFT SIDE */}
         <div className="hero-left">
           <h1>
-            Hi, I'm <span>Patel Shlok</span> 👋
+           <FadeIn> Hi, I'm <span>Patel Shlok</span>   👋</FadeIn>
           </h1>
 
           <h3>Aspiring Cybersecurity Engineer & Cloud Enthusiast</h3>
@@ -61,6 +67,6 @@ export default function Hero() {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 }

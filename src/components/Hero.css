@@ -77,10 +77,10 @@
 }
 
 .tech-card {
-  background: #1e293b;
+  background: #111827;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+  border-radius: 10px;
+  border: 1px solid #1f2937;
 }
 
 .tech-card h3 {

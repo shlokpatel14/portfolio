@@ -1,6 +1,8 @@
+import FadeIn from "./FadeIn";
 export default function Projects() {
   return (
     <section id="projects">
+      <FadeIn>
       <h2>Projects</h2>
 
       <div className="grid">
@@ -20,6 +22,7 @@ export default function Projects() {
           </a>
       </div>
       </div>
+        </FadeIn>
     </section>
   );
 }

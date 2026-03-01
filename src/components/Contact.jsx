@@ -1,5 +1,6 @@
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import FadeIn from "./FadeIn";
 import { useRef } from "react";
 
 export default function Contact() {
@@ -25,6 +26,7 @@ export default function Contact() {
   };
 
   return (
+    <FadeIn>
     <section id="contact">
       <h2>Contact Me</h2>
 
@@ -54,5 +56,6 @@ export default function Contact() {
 
       </form>
     </section>
+    </FadeIn>
   );
 }
